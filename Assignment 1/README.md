@@ -1,13 +1,22 @@
 # Building Motion Simulation
 
 ## Purpose
-You are employed by an architecture company to write code for a building simulation. The
-company has a client that wants to model the motion response of a tall building following being hit by a
-sudden strong gust of wind. The simulation must run on a PC in real time and is part of a larger
-simulation that includes the motion of traffic and pedestrians etc. Because it must run in real-time it is too
-time consuming to use the more accurate but slow math library functions, so your task is to investigate a
-less accurate but faster Maclaurin Series approximation. The motion of the building is damped so it
-performs less than one complete oscillation. The following graph shows oscillation under differing
-degrees of damping
+While the user wishes to continue, the user is asked to choose the number of terms in the
+series up to a maximum of five. Then the user selects a range of t, somewhere between 0 and +2.0 up to which the series is
+evaluated from 0 in ten equal increments. For each value of t the Maclaurin series approximation to the function is output together with the exact value calculated using the math library functions exp and cos. 
+
+The error that results from using the series approximation is calculated in two different ways.
+1. Exact % Error = 100*(exact value – series value)/exact value
+1. Truncation % Error = 100*first truncated term/series value.
+
+
+1. From comparison with the exact value calculated using the math library functions:
+2. From the first truncated term. This gives you an idea of how well the first truncated term
+approximates to the error.
+
 
 ## Screenshots of Program
+![Assign 1 Image 1](https://github.com/AhmedAfzal5/CST8233-Numerical-Computing/blob/master/Assignment%201/Screenshots/assign1-img1.PNG)
+![Assign 1 Image 2](https://github.com/AhmedAfzal5/CST8233-Numerical-Computing/blob/master/Assignment%201/Screenshots/assign1-img2.PNG)
+![Assign 1 Image 3](https://github.com/AhmedAfzal5/CST8233-Numerical-Computing/blob/master/Assignment%201/Screenshots/assign1-img3.PNG)
+![Assign 1 Image 4](https://github.com/AhmedAfzal5/CST8233-Numerical-Computing/blob/master/Assignment%201/Screenshots/assign1-img4.PNG)
